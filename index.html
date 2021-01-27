@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Keelan Oonsk</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
+	<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
+	<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
+	<link rel="shortcut icon" href="pictureAssets/favicon.jpg" type="image/gif" sizes="16x16">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script>
+	<script>
+		function dropdownMobile() {
+		  document.getElementById("mobileDropdown").classList.toggle("show");
+		  document.getElementById("mobileNavButton").classList.toggle("flipImage");
+		}
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".buttonSlide").click(function(){
+				$('html, body').animate({scrollTop:document.documentElement.clientHeight - 75},'50');
+			});
+		});
+		$(document).ready(function() {
+			$(window).scroll(function(){ 
+                $('.imageHeader').css("opacity", 1 - $(window).scrollTop() / 210)
+//				$('.imageSlogan').css("opacity", 1 - $(window).scrollTop() / 210)
+            })
+		});
+		// Close the dropdown menu if the user clicks outside of it
+//		window.onclick = function(event) {
+//		  if (!event.target.matches('.dropbtn')) {
+//			var dropdowns = document.getElementsByClassName("dropdown-content");
+//			var i;
+//			for (i = 0; i < dropdowns.length; i++) {
+//			  var openDropdown = dropdowns[i];
+//			  if (openDropdown.classList.contains('show')) {
+//				openDropdown.classList.remove('show');
+//			  }
+//			}
+//		  }
+//		}
+	</script>
+</head>
+<header class="head">
+	<img src="pictureAssets/animatedLogo.gif" width="150"/>
+
+</header>
+	<body onLoad="initValues()">
+		<div class="image">
+		  <h1 class="imageHeader">KWOLLMSMEDIA</h1>
+		  <p class="imageSlogan">&nbsp;</p>
+			<p class="imageSlogan">&nbsp;</p>
+			<div class="centerSlide">
+				<button class="buttonSlide">
+					<img class="slideDown"  src="pictureAssets/slideDown.svg"/>
+				</button>
+			</div>
+		</div>
+		<div class="wrap">
+			<div id="nav" class="sticky">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">FEATURED</a></li>
+					<li><a href="#">MY WORK</a></li>
+					<li><a href="#">CREATORS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="mobileDropdown sticky">
+				<button onclick="dropdownMobile()" class="navMobileButton"><img src="pictureAssets/navSlideDown.svg" id="mobileNavButton"></button>
+				<div id="mobileDropdown" class="mobileDropdownContent">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">FEATURED</a></li>
+						<li><a href="#">MY WORK</a></li>
+						<li><a href="#">CREATORS</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="body">
+				<div class="introWrapper">
+					<div class="intro">
+						<div class="introText">
+							<h1>Hi, I'm Keelan</h1>
+							<div class="paragraphWrap">
+								<p>I'm a freelance graphic designer and programmer. Check out my work here and contact me to work together!</p>
+							</div>
+						  <div class="contactContainer">
+								<div class="button" id="buttonIntro">
+									<div id="translate"></div>
+										<a href="#">Contact</a>
+									</div>
+						  </div>
+					  </div>
+						<div class="imageWrap">
+							<img src="pictureAssets/IMG_0073-2.jpg" class="introImage">
+						</div>
+					</div>
+				</div>
+				<div class="workWrapper">
+					<div class="work">
+
+						<div class="workText">
+							<h1>My Work</h1>
+							<div class="paragraphWrap">
+							  <p>Take a look at my work in photography, animation and graphic design!</p>
+							</div>
+						  <div class="contactContainer">
+								<div class="button" id="buttonWork">
+								<div id="translateWork"></div>
+									<a href="#">Work</a>
+								</div>
+						  </div>
+					  </div>
+					<img src="pictureAssets/lincolnFarL.jpg" class="workImage">
+					</div>
+				</div>
+			</div>
+				<div class="footer">
+					<div>
+						<center>
+							<img class="twitchLogo" src="pictureAssets/twitchLogo.svg" onerror="this.onerror=null; this.src='image.png'" />
+							<img class="linkedInLogo" src="pictureAssets/linkedInLogo.svg" onerror="this.onerror=null; this.src='image.png'"/>
+							<img class="twitterLogo" src="pictureAssets/twitterLogo.svg" onerror="this.onerror=null; this.src='image.png'"/>
+							<img class="instagramLogo" src="pictureAssets/instagramLogo.svg" onerror="this.onerror=null; this.src='image.png'"/>
+						</center>
+					</div>
+				</div>
+		</div>
+</body>
+	
+</html>
