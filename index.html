@@ -1,137 +1,120 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
-	<title>Keelan Oonsk</title>
-	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
-	<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
-	<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
-	<link rel="shortcut icon" href="pictureAssets/favicon.jpg" type="image/gif" sizes="16x16">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
-    </script>
-	<script>
-		function dropdownMobile() {
-		  document.getElementById("mobileDropdown").classList.toggle("show");
-		  document.getElementById("mobileNavButton").classList.toggle("flipImage");
-		}
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(".buttonSlide").click(function(){
-				$('html, body').animate({scrollTop:document.documentElement.clientHeight - 75},'50');
-			});
-		});
-		$(document).ready(function() {
-			$(window).scroll(function(){ 
-                $('.imageHeader').css("opacity", 1 - $(window).scrollTop() / 210)
-//				$('.imageSlogan').css("opacity", 1 - $(window).scrollTop() / 210)
-            })
-		});
-		// Close the dropdown menu if the user clicks outside of it
-//		window.onclick = function(event) {
-//		  if (!event.target.matches('.dropbtn')) {
-//			var dropdowns = document.getElementsByClassName("dropdown-content");
-//			var i;
-//			for (i = 0; i < dropdowns.length; i++) {
-//			  var openDropdown = dropdowns[i];
-//			  if (openDropdown.classList.contains('show')) {
-//				openDropdown.classList.remove('show');
-//			  }
-//			}
-//		  }
-//		}
-	</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
+<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
+<link rel="stylesheet" href="https://use.typekit.net/nxz5odi.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	function dropdownMobile() {
+	  document.getElementById("mobileDropdown").classList.toggle("show");
+	  document.getElementById("mobileNavButton").classList.toggle("flipImage");
+	}
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".buttonSlide").click(function(){
+		$('html, body').animate({scrollTop:document.documentElement.clientHeight},'50');
+	});
+});
+$(document).ready(function() {
+	$(window).scroll(function(){ 
+		$('.imageHeader').css("opacity", 1 - $(window).scrollTop() / 210)
+	})
+});
+</script>
 </head>
-<header class="head">
-	<img src="pictureAssets/animatedLogo.gif" width="150"/>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> 
+	  <img src="pictureAssets/animatedLogo.gif" width="150"/>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro" id="intro">
+    <h2 class="intro_header">KWOLLMS<span class="intro_headerDark">MEDIA</span></h2>
+	<div class="centerSlide">
+		<button class="buttonSlide">
+			<img class="slideDown"  src="pictureAssets/slideDown.svg"/>
+		</button>
+	</div>
+  </section>
+  <!-- About Section -->
+  <div id="nav" class="sticky">
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">THOUGHTS</a></li>
+		<li><a href="#">WORK</a></li>
+		<li><a href="#">CREATORS</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
+  </div>
+  <div class="mobileDropdown sticky">
+	<button onclick="dropdownMobile()" class="navMobileButton"><img src="pictureAssets/navSlideDown.svg" id="mobileNavButton"></button>
+	<div id="mobileDropdown" class="mobileDropdownContent">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">FEATURED</a></li>
+			<li><a href="#">MY WORK</a></li>
+			<li><a href="#">CREATORS</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+	</div>
+  </div>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">Graphic Design </h1>
+      <h4>Exploring Graphic Design</h4>
+      <p>The way graphic design influences our lives.</p>
+    </div>
+    <div class="thumbnail" >
+	  
+	  <h1 class="stats">Machine Learning</h1>
+	  <h4>Understanding Machine Learning</h4>
+	  <p>Data allows computers to do the thinking for us.</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">Photography</h1>
+      <h4>Looking Into Photography</h4>
+      <p>Capturing the world around us through a lens.</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">Programming</h1>
+      <h4>Diving Into Programming</h4>
+      <p>The catalyst to our ever growing digital world.</p>
+    </div>
+  </div>
+  <!-- Parallax Section -->
+  <section class="banner">
+    <h2 class="parallax">Hi, I'm Keelan<br/>I Create</h2>
+    <p class="parallax_description">I'm a freelance graphic designer and programmer from Central Alberta. I design nearly anything you can think of on my computer. Check out my work along with others who create content here!</p>
+  </section>
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+	  <img src="pictureAssets/IMG_0073-2.jpg" alt="" width="500" class="cards"/>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Born and raised in Central Alberta, I've spent many of my years since I was in grade 6 designing and creating different things on computers. Fast forward nearly 7 years, now I'm using my skills in graphic design and programming to provide value to others personally and in business. A lot of interests have come and gone over the years but the only ones that have truly stuck are design and programming. My plans are to attend post secondary for computer science and business to help further my education and ability to help others in the fields that mean something to me. I've always had an eye for minimalistic design and I think and hope that shines through in a lot of my work. Take a look trhough my work, all feedback is appreciated! </p>
+    </article>
 
-</header>
-	<body onLoad="initValues()">
-		<div class="image">
-		  <h1 class="imageHeader">KWOLLMSMEDIA</h1>
-		  <p class="imageSlogan">&nbsp;</p>
-			<p class="imageSlogan">&nbsp;</p>
-			<div class="centerSlide">
-				<button class="buttonSlide">
-					<img class="slideDown"  src="pictureAssets/slideDown.svg"/>
-				</button>
-			</div>
-		</div>
-		<div class="wrap">
-			<div id="nav" class="sticky">
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">FEATURED</a></li>
-					<li><a href="#">MY WORK</a></li>
-					<li><a href="#">CREATORS</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-			</div>
-			<div class="mobileDropdown sticky">
-				<button onclick="dropdownMobile()" class="navMobileButton"><img src="pictureAssets/navSlideDown.svg" id="mobileNavButton"></button>
-				<div id="mobileDropdown" class="mobileDropdownContent">
-					<ul>
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">FEATURED</a></li>
-						<li><a href="#">MY WORK</a></li>
-						<li><a href="#">CREATORS</a></li>
-						<li><a href="#">CONTACT</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="body">
-				<div class="introWrapper">
-					<div class="intro">
-						<div class="introText">
-							<h1>Hi, I'm Keelan</h1>
-							<div class="paragraphWrap">
-								<p>I'm a freelance graphic designer and programmer. Check out my work here and contact me to work together!</p>
-							</div>
-						  <div class="contactContainer">
-								<div class="button" id="buttonIntro">
-									<div id="translate"></div>
-										<a href="#">Contact</a>
-									</div>
-						  </div>
-					  </div>
-						<div class="imageWrap">
-							<img src="pictureAssets/IMG_0073-2.jpg" class="introImage">
-						</div>
-					</div>
-				</div>
-				<div class="workWrapper">
-					<div class="work">
-
-						<div class="workText">
-							<h1>My Work</h1>
-							<div class="paragraphWrap">
-							  <p>Take a look at my work in photography, animation and graphic design!</p>
-							</div>
-						  <div class="contactContainer">
-								<div class="button" id="buttonWork">
-								<div id="translateWork"></div>
-									<a href="#">Work</a>
-								</div>
-						  </div>
-					  </div>
-					<img src="pictureAssets/lincolnFarL.jpg" class="workImage">
-					</div>
-				</div>
-			</div>
-				<div class="footer">
-					<div>
-						<center>
-							<img class="twitchLogo" src="pictureAssets/twitchLogo.svg" onerror="this.onerror=null; this.src='image.png'" />
-							<img class="linkedInLogo" src="pictureAssets/linkedInLogo.svg" onerror="this.onerror=null; this.src='image.png'"/>
-							<img class="twitterLogo" src="pictureAssets/twitterLogo.svg" onerror="this.onerror=null; this.src='image.png'"/>
-							<img class="instagramLogo" src="pictureAssets/instagramLogo.svg" onerror="this.onerror=null; this.src='image.png'"/>
-						</center>
-					</div>
-				</div>
-		</div>
+  </footer>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="footer_header">GET IN CONTACT WITH ME</p>
+    <div class="button">CONTACT&nbsp;</div>
+  </section>
+  <!-- Copyrights Section -->
+<!--  <div class="copyright">&copy;2021- <strong>&nbsp;</strong></div>-->
+</div>
+<!-- Main Container Ends -->
 </body>
-	
 </html>
