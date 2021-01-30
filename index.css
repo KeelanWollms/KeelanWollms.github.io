@@ -418,7 +418,7 @@ header nav ul {
   cursor: pointer;
   vertical-align: top;
   width: 48px;
-  padding: 30px;
+  padding: 10px;
 }
 
 /* Dropdown button on hover & focus */
@@ -715,7 +715,8 @@ footer .footer_column p {
   border: none;
   cursor: pointer;
   vertical-align: top;
-  width: 48px;
+  width: 58px;
+  padding: 20px;
 }
 
 /* Dropdown button on hover & focus */
