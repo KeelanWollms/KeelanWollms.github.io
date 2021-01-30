@@ -462,7 +462,7 @@ header nav ul {
   width: 100%;
   text-decoration: none;
   display: block;
-  margin: 10px 0px;
+  padding: 10px 0px;
 }
 .mobileDropdownContent ul li a{
 	font:  14px/1.3 'Open Sans', arial, sans-serif;
@@ -759,7 +759,7 @@ footer .footer_column p {
   width: 100%;
   text-decoration: none;
   display: block;
-  margin: 10px 0px;
+  padding: 10px 0px;
 }
 .mobileDropdownContent ul li a{
 	font:  14px/1.3 'Open Sans', arial, sans-serif;
