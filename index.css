@@ -602,8 +602,7 @@ footer .footer_column p {
 	color: #043745;
 }
 .intro{
-	background-size: cover;
-	background-position: center 80px;
+	background-size: 100%;
 /*	background-size: 100%;*/
 /*	height:100%;*/
 }
