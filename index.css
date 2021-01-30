@@ -418,6 +418,7 @@ header nav ul {
   cursor: pointer;
   vertical-align: top;
   width: 48px;
+  padding: 30px;
 }
 
 /* Dropdown button on hover & focus */
@@ -443,7 +444,7 @@ header nav ul {
 .mobileDropdownContent {
   display: none;
   background-color: black;
-
+  top: -50px;
 }
 
 /* Links inside the dropdown */
