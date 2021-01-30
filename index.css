@@ -606,7 +606,7 @@ footer .footer_column p {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-attachment: scroll;
+	background-attachment: none;
 /*	background-size: 100%;*/
 /*	height:100%;*/
 }
