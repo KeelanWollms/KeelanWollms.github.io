@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*
+Fix:
+Dropdown Colours and text decore
+Images on mobile
+*/
+
 /* Body */
 html{
 	height: 100%;
@@ -232,7 +238,7 @@ header img{
 	background-color: #000000;
 	background-image: url("pictureAssets/IMG_4935-2.jpg");
 	background-position: 0;
-	background-size: auto;
+/*	background-size: auto;*/
 	height: 600px;
 	background-attachment: fixed;
 	background-size: cover;
@@ -430,7 +436,7 @@ header nav ul {
   justify-content: center;
   z-index: 100;
   background-color: black;
-  margin-top: 20px;
+/*  margin-top: 20px;*/
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -462,7 +468,8 @@ header nav ul {
 	font:  14px/1.3 'Open Sans', arial, sans-serif;
 	font-weight:800;
 	font-size: 18px;
-
+	color: white;
+	text-decoration: none;
 }
 .mobileDropdownContent ul li:hover {
   background-color: black;
@@ -726,7 +733,7 @@ footer .footer_column p {
   justify-content: center;
   z-index: 100;
   background-color: black;
-  margin-top: 20px;
+/*  margin-top: 20px;*/
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -758,7 +765,8 @@ footer .footer_column p {
 	font:  14px/1.3 'Open Sans', arial, sans-serif;
 	font-weight:800;
 	font-size: 18px;
-
+	color: white;
+	text-decoration: none;
 }
 .mobileDropdownContent ul li:hover {
   background-color: black;
