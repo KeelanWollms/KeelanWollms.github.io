@@ -534,6 +534,8 @@ footer .footer_column p {
 }
 .banner {
 	background-color: #2D9AB7;
+	background-size:100%;
+	width:100%;
 /*	background-image: none;*/
 }
 .tagline {
