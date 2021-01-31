@@ -703,7 +703,7 @@ footer .footer_column p {
 	padding-left: 20px;
 	padding-right: 20px;
 	position: static;
-/*	background-size: auto 100%;*/
+	background-size: auto 100%;
 }
 .parallax{
 	font-size: 25px;
