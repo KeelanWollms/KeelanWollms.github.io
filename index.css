@@ -201,7 +201,7 @@ header img{
 	color: #FFFFFF;
 	margin-bottom: 5px;
 	font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-	font-size: 40px;
+	font-size: 30px;
 }
 .gallery {
 	clear: both;
@@ -593,7 +593,7 @@ footer .footer_column p {
 }
 
 /* Small Tablets */
-@media (min-width: 321px)and (max-width: 767px) {
+@media (min-width: 321px) and (max-width: 767px) {
 .logo {
 	width: 100%;
 	text-align: center;
@@ -705,7 +705,7 @@ footer .footer_column p {
 	padding-right: 20px;
 	background-attachment: scroll;
 /*	position: static;*/
-	background-size: 100% 100%;
+	background-size: 100%;
 }
 .parallax{
 	font-size: 25px;

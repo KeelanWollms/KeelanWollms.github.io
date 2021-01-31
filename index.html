@@ -18,13 +18,22 @@
 </script>
 <script type="text/javascript">
 $(document).ready(function(){
+//	var mediaFullSmall = window.matchMedia("(min-width: 768px) and (max-width: 1096px)");
+//	var mediaMobileBig = window.matchMedia("(min-width: 321px) and (max-width: 767px)");
+//	var mediaMobileSmall = window.matchMedia("(max-width: 320px)");
+//	console.log(mediaFullSmall)
 	$(".buttonSlide").click(function(){
-		$('html, body').animate({scrollTop: document.documentElement.clientHeight},'50');
+		if ((window.matchMedia("(max-width: 767px)").matches)){
+			$('html, body').animate({scrollTop: document.documentElement.clientHeight + 25},'50');
+		}
+		else{
+			$('html, body').animate({scrollTop: document.documentElement.clientHeight},'50');
+		}
 	});
 });
 $(document).ready(function() {
 	$(window).scroll(function(){ 
-		$('.imageHeader').css("opacity", 1 - $(window).scrollTop() / 210)
+		$('.intro_header').css("opacity", 1 - $(window).scrollTop() / 600)
 	})
 });
 </script>
@@ -60,9 +69,8 @@ $(document).ready(function() {
 	<div id="mobileDropdown" class="mobileDropdownContent">
 		<ul>
 			<li><a href="#">HOME</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">FEATURED</a></li>
-			<li><a href="#">MY WORK</a></li>
+			<li><a href="#">THOUGHTS</a></li>
+			<li><a href="#">WORK</a></li>
 			<li><a href="#">CREATORS</a></li>
 			<li><a href="#">CONTACT</a></li>
 		</ul>
@@ -102,7 +110,7 @@ $(document).ready(function() {
     <article class="footer_column">
       <h3>ABOUT</h3>
 	  <img src="pictureAssets/IMG_0073-2.jpg" alt="" width="500" class="cards"/>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Born and raised in Central Alberta, I've spent many of my years since I was in grade 6 designing and creating different things on computers. Fast forward nearly 7 years, now I'm using my skills in graphic design and programming to provide value to others personally and in business. A lot of interests have come and gone over the years but the only ones that have truly stuck are design and programming. My plans are to attend post secondary for computer science and business to help further my education and ability to help others in the fields that mean something to me. I've always had an eye for minimalistic design and I think and hope that shines through in a lot of my work. Take a look trhough my work, all feedback is appreciated! </p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Born and raised in Central Alberta, I've spent many of my years since I was in grade 6 designing and creating different things on computers. Fast forward nearly 7 years, now I'm using my skills in graphic design and programming to provide value to others personally and in business. A lot of interests have come and gone over the years but the only ones that have truly stuck are design and programming. My plans are to attend post secondary for computer science and business to help further my education and ability to help others in the fields that mean something to me. I've always had an eye for minimalistic design and I think and hope that shines through in a lot of my work. Take a look through my work, all feedback is appreciated! </p>
     </article>
 
   </footer>
