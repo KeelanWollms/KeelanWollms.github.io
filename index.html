@@ -24,10 +24,10 @@ $(document).ready(function(){
 //	console.log(mediaFullSmall)
 	$(".buttonSlide").click(function(){
 		if ((window.matchMedia("(max-width: 767px)").matches)){
-			$('html, body').animate({scrollTop: document.documentElement.clientHeight + 500},'50');
+			$('html, body').animate({scrollTop: (document.documentElement.clientHeight + 500)},'50');
 		}
 		else{
-			$('html, body').animate({scrollTop: document.documentElement.clientHeight + 500},'50');
+			$('html, body').animate({scrollTop: document.documentElement.clientHeight},'50');
 		}
 	});
 });
